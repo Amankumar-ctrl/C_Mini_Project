@@ -1,2 +1,2 @@
-# RISU_Mini_Project
+# C_Mini_Project
 First Project in C language
