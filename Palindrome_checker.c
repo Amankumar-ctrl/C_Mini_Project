@@ -19,23 +19,21 @@ void displayTogether(char str[], char rev[]) {
     printf("\nOriginal: %s\n", str);
     printf("Reversed:  %s\n", rev);
     if(isPalindrome(str)) {
-        printf(" PALINDROME DETECTED!\n");
+        printf("PALINDROME DETECTED!\n");
     } else {
-        printf(" Not a Palindrome\n");
+        printf("Not a Palindrome\n");
     }
-    printf("==================\n");
 }
 
 int main() {
     char input[100];
     
-    printf(" RUNGTA COLLEGE MINI PROJECT #11\n");
-    printf(" PALINDROMIC STRING ANALYZER (C)\n");
-    printf("====================================\n");
+    printf(" \nC MINI PROJECT\n");
+    printf("PALINDROMIC STRING ANALYZER\n");
     
-    printf("Enter a string to analyze: ");
+    printf("\nEnter a string to analyze: ");
     fgets(input, sizeof(input), stdin);
-    input[strcspn(input, "\n")] = 0;  // Remove newline
+    input[strcspn(input, "\n")] = 0;  
     
     char reversed[100];
     reverseString(input, reversed);
@@ -43,7 +41,5 @@ int main() {
     displayTogether(input, reversed);
     
     printf("\n Project completed successfully!\n");
-    printf("Enhanced logic with manual reverse & palindrome check!\n");
-    
     return 0;
 }
